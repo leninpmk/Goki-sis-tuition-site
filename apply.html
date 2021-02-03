@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FORM</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,intial-scale=1.0">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function comment() {
+			var data="Name:<br><input type='text' name='Name'><br>Comment:<br><textarea rows='5' cols='20'></textarea><br><input type='submit' value='post'>";
+			document.getElementById('location').innerHTML=data;
+		}
+	</script>
+	<style>
+	.affix
+		{
+			top: 0;
+			width: 100%;
+		}
+		.affix+.container{
+			padding-top: 70px;
+		}
+	</style>
+</head>
+<body >
+	<nav class="navbar" data-spy="affix" data-offset-top="197" style="background-color: #a5d2c3">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Notification</a></li>
+<li class="active"><a href="#">Schedule</a></li>
+<li class="active"><a href="#">How to apply</a></li>
+<li class="active"><a href="#">Visit us</a></li>
+<li class="active"><a href="quiz.html">Entrance exam</li>
+</ul>
+	</nav>
+	
+	<div class="container-fluid">
+		<div class="col-lg-6">
+		<form class="form-horizontal" style="border:2px solid red;padding-left: 50px;background-color: #a2b2c2;color: #444;">
+			<h1 style="color: #911"><center>Student's Registration</center></h1>
+			<div><b>Name:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" style="width: 30%;box-sizing: border-box;padding: 12px 20px;margin: 9px 0;border-radius: 8px;"><br>
+			<b>Father's Name:</b>
+				<input type="text" style="width: 30%;box-sizing: border-box;padding: 12px 20px;margin: 9px 0;border-radius: 8px;"><br>
+				<b>School name:</b>&nbsp;&nbsp;
+				<input type="text" name="school" placeholder="Enter your school" style="width: 30%;box-sizing: border-box;padding: 12px 20px;margin: 9px 0;border-radius: 8px;"><br>
+				<b>Academic year:</b>
+			<input type="text" name="academic" placeholder="Enter your academic year" style="width: 30%;box-sizing: border-box;padding: 12px 20px;margin: 9px 0;border-radius: 8px;"><br>
+		</div>
+			<b>Gender:</b>
+			<div class="radio">
+				<label><input type="radio" name="gender">Male</label>
+			</div>
+			<div class="radio">
+				<label><input type="radio" name="gender">Female</label>
+			</div>
+			<b>which class do you want to choose:</b>
+			<div class="checkbox">
+				<label><input type="checkbox" value="3">10TH</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="4">12Th</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="5">TNPSC exam</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="6">TET exam</label>
+			</div><br>
+			Address:
+			<div><textarea rows="5" cols="20" style="box-sizing: border-box;padding: 12px 20px;margin: 9px 0;border-radius: 8px;"></textarea></div>
+			District:
+			<div><select name="District" style="color: blue;">
+				<option>Theni</option>
+				<option>Madurai</option>
+				<option>Dindugal</option>
+				<option>Sivagangai</option>
+				<option>Pudukkottai</option>
+				<option>Trichy</option>
+			</select></div><br>
+			<button type="button" class="btn btn-primary">Register</button>
+			<p>The Registration Fees for joining is Rs. 365/-, if you pay online. If our person collects the payment from your address then the charges will be Rs. 400/-</p>
+</form>
+		</div>	<div class="col-lg-6">
+<input type="button" class="btn btn-success" value="comment" onclick="comment()">
+<div id="location"></div></div></div>
+</body>
+</html>

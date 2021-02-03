@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>samp2</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$("#flip").click(function()
+			{
+				$("#panel").slideDown("slow");
+			});
+		});
+	</script>
+	<script>
+	$(document).ready(function()
+		{
+			$("#flip").click(function()
+			{
+				$("#panel").slideUp("slow");
+			});
+		});
+	</script>
+	<style>
+		#flip,#panel
+		{
+padding: 5px;
+background-color: #901;
+text-align: center;
+border:7px solid #c3c3c3;
+		}
+		#panel
+		{
+			padding: 30px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+<div id="flip">Login</div>
+<div id="panel"></div>
+</body>
+</html>

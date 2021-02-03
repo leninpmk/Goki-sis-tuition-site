@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FORM</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,intial-scale=1.0">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="a">Option 1
+				</label>
+			</div>
+			<label class="checkbox-inline"><input type="checkbox" value="b">Option2</label>
+			<label class="checkbox-inline"><input type="checkbox" value="c">Option 3</label>
+			<div class="chekbox-disabled">
+				<label><input type="checkbox" value="d" disabled>Option 4</label>
+			</div>
+			<div class="radio">
+				<label><input type="radio" name="optradio" checked>Cricket</label>
+			</div>
+			<div class="radio">
+				<label><input type="radio" name="optradio" disabled>Footaball</label>
+			</div>
+			<div class="form-group">
+				<label for="sel1">SELECT any one</label>
+				<select class="form-control" id="sel1">
+					<option>Tamil nadu</option>
+					<option>kerala</option>
+					<option>karnataka</option>
+					<option>Andhra pradesh</option>
+				</select>
+			<label for="sel2">SELECT multiple:</label>
+				<select multiple class="form-control" id="sel2">
+					<option>10th compeleted</option>
+					<option>12th completed</option>
+					<option>UG degree</option>
+					<option>PG degree</option>
+				</select>
+				<i class="fa fa-rupee"></i>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

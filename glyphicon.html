@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FORM</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,intial-scale=1.0">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h3>Horizontal form</h3>
+<form class="form-horizontal">
+	<div class="form-group">
+		<label class="cols-sm-2" control-label>Focused</label>
+		<div class="cols-sm-10">
+			<input class="form-control" id="focusedinput" type="text" value="click to focus">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="disabledinput" class="cols-sm-2 control-label">Disabled</label>
+		<div class="cols-sm-10">
+			<input class="form-control" id="disabledinput" type="text" placeholder="comment box" disabled>
+</div>
+</div>
+<fieldset disabled="">
+	<div class="form-group">
+		<label for="disabledtextinput" class="cols-sm-2 control-label">Disabled</label>
+		<div class="cols-sm-10">
+			<input type="text" id="disabled" class="form-control" placeholder="Input box" >
+		</div>
+	</div>
+</fieldset>
+<div class="form-group has-success has-feedback">
+	<label class="cols-sm-2 control-label" for="inputsuccess">Input</label>
+	<div class="cols-sm-10">
+		<input type="text" class="form-control" id="inputsuccess">
+		<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+	</div>
+</div>
+<div class="form-group has-warning has-feedback">
+	<label class="cols-sm-2 control-label" for="inputsuccess">Input</label>
+	<div class="cols-sm-10">
+		<input type="text" class="form-control" id="inputsuccess">
+		<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="cols-sm-2">
+		<label for="ex1">col-sm-2</label>
+		<input class="form-control" id="ex1" type="text">
+		      <div class="cols-sm-3">
+		   <label for="ex2">col-sm-3</label>
+		      <input class="form-control" id="ex2" type="text">
+	                <div class="cols-sm-4">
+		          <label for="ex3">col-sm-4</label>
+		            <input class="form-control" id="ex3" type="text">
+		        </div>
+</form>
+</div>
+</body>
+</html>

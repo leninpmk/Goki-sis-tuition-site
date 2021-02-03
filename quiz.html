@@ -1,0 +1,124 @@
+
+<html>
+<head>
+	<title>quiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,intial-scale=1.0">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="padding-left: 100px; background-color:hsl(0,100%,90%);color:black;font-size: 20px;">
+	<form name="myform">
+	<p style="color: blue;" class="glyphicon glyphicon-hand-right">   Q1.What is the biggest country in the world?</p>
+		<div>
+				<input type="radio" name="q1" value="a">America<br>
+             <input type="radio" name="q1"  value="b">Russia<br>
+	<input type="radio" name="q1"  value="c">china<br>
+			</div><br>
+  <p style="color: blue;" class="glyphicon glyphicon-hand-right">  Q2.How many people are there in the world?</p>
+<div>
+	<input type="radio" name="q2"  value="a">6 billion<br>
+				<input type="radio" name="q2"  value="b">4 billion<br>
+			<input type="radio" name="q2" value="c">7 billion<br>
+			</div><br>
+  <p style="color: blue;" class="glyphicon glyphicon-hand-right">  Q3.What is the biggest river in the world?</p>
+<div>
+			<input type="radio" name="q3"  value="a">Nile<br>
+				<input type="radio" name=q3"  value="b">Amazon<br>
+				<input type="radio" name="q3"  value="c">Mississippi-missouri<br>
+			</div><br>
+  <p style="color: blue;"class="glyphicon glyphicon-hand-right">  Q4.What is the highest mountain in the world?</p>
+<div>
+				<input type="radio" name="q4"  value="a">K-2<br>
+			<input type="radio" name="q4"  value="b">Mount Everest<br>
+			<input type="radio" name="q4"  value="c">Kanchenjunga<br>
+			</div> <br>
+<p style="color: blue;" class="glyphicon glyphicon-hand-right">  Q5.What is the largest coffee growing country in the world?</p>
+  <div>
+	    <input type="radio" name="q5"  value="a">Italy<br>
+		   <input type="radio" name="q5"  value="b">Brazil<br>
+			<input type="radio" name="q5"  value="c">England<br>
+			</div><br>
+ <p style="color: blue;" class="glyphicon glyphicon-hand-right">  Q6.In what city were the 2000 Olympics held in australia?</p>
+<div>
+				<input type="radio" name="q6"  value="a">Hobart<br>
+				<input type="radio" name="q6"  value="b">Melbourne<br>
+		<input type="radio" name="q6"  value="c">Canberra<br>
+			</div><br>
+<p style="color: blue;" class="glyphicon glyphicon-hand-right"> Q7. What is the capital city of New zealand?</p>
+<div>
+				<input type="radio" name="q7"  value="a">Auckland<br>
+			<input type="radio" name="q7"  value="b">Wellington<br>
+		<input type="radio" name="q7"  value="c">Christchurch<br>
+			</div><br>
+<p style="color: blue;" class="glyphicon glyphicon-hand-right">  Q8.For which of the following disciplines is Nobel Prize awarded?</p>
+			<div>        
+	<input type="radio" name="q8"  value="a">Physiology or Medicine<br>
+				<input type="radio" name="q8"  value="b">Literature,Peace and Economics<br>
+		<input type="radio" name="q8"  value="c">All of the above<br>
+			</div><br>
+
+<p style="color: blue;" class="glyphicon glyphicon-hand-right">  Q9.Which indoor sport is the most popular in the US?</p>
+<div>
+				<input type="radio" name="q9"  value="a">Swimming<br>
+		<input type="radio" name="q9"  value="b">Indoor soccer<br>
+				<input type="radio" name="q9"  value="c">Basketball<br>
+			</div><br>
+<p style="color: blue;" class="glyphicon glyphicon-hand-right">  Q10.Which one is famous in Madurai?</p>
+<div>
+				<input type="radio" name="q10"  value="a">Jasmine<br>
+		<input type="radio" name="q10"  value="b">Lock<br>
+				<input type="radio" name="q10"  value="c">Temple<br>
+			</div><br>
+			<input type="button" value="submit" onclick="check()" style="color: green">
+		</form>
+			<script>
+				function check()
+				{
+				var q1=document.myform.q1.value;
+				var q2=document.myform.q2.value;
+				var q3=document.myform.q3.value;
+				var q4=document.myform.q4.value;
+				var q5=document.myform.q5.value;
+                var q6=document.myform.q6.value;
+				var q7=document.myform.q7.value;
+				var q8=document.myform.q8.value;
+				var q9=document.myform.q9.value;
+				var q10=document.myform.q10.value;
+				var count=0;
+				if (q1=="b") {
+					count++;
+				}
+				if (q2=="c") {
+					count++;
+				}
+				if (q3=="a") {
+					count++;
+				}
+				if (q4=="b") {
+					count++;
+				}
+				if (q5=="b") {
+					count++;
+				}
+				if (q6=="b") {
+					count++;
+				}
+				if (q7=="b") {
+					count++;
+				}
+				if (q8=="c") {
+					count++;
+				}
+				if (q9=="b") {
+					count++;
+				}
+				if (q10=="a") {
+					count++;
+				}
+				alert("you got  " +count+ "  marks in this quiz");
+			}
+			</script>
+</body>
+</html>

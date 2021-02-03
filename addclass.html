@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM fields</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+	</script>
+	<script>
+	$(document).ready(function()
+	{
+	$("#flip").click(function()
+			{
+				$("#panel").slideDown('slow');
+			});
+});
+</script>
+<style>
+	#flip,#panel
+	{
+		padding: 6px;
+		background-color: green;
+		text-align: center;
+		border: solid 2px black;
+	}
+	#panel
+	{
+		padding: 50px;
+		display: none;
+	}
+</style>
+</head>
+<body>
+	<p>This is frist paragraph</p>
+	<div id="flip">Click to slide down</div>
+	<div id="panel">HELLO!</div>
+</body>
+</html>

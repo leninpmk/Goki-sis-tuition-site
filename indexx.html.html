@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Program</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,intial-scale=1.0">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+		function show()
+		{
+			alert("Support our website");
+		}
+	</script>
+	<style>
+	
+	{
+		box-sizing: border-box;
+		border:1px solid red;
+	}
+		 ul
+		{
+			list-style-type: none;
+			background-color:maroon;
+			margin: 10px;
+			padding: 5px;
+			width: 100%;
+		}
+	
+		 li a
+		{
+			display: block;
+			color: white;
+			padding: 8px 16px;
+			text-decoration: underline;
+		}
+	 li a:hover
+		{
+			background-color: white;
+			color: blue;
+		}
+		.border
+		{
+			border: 7px solid #fff;
+			padding: 20px;
+			border-image: url(border1.gif) 20 round;
+		}
+		
+.inner-addon
+	{
+		position: relative;
+	}
+	.inner-addon .glyphicon
+	{
+		position: absolute;
+		padding: 5px;
+		pointer-events: none;
+	}
+	.left-addon .glyphicon{left: 0px;}
+	.right-addon .glyphicon{right: 0px;}
+	.left-addon input
+	{
+		padding-left: 30px;
+	}
+	.right-addon input{
+		padding-right: 30px;
+	}
+ 	body
+ 	{
+ 		margin: 0px;
+ 	}
+</style>
+</head>
+<body style="background-image: url('bg2.jpg');">
+<div class="container"><br>
+	<div class="row">
+		<div class=" col-xs-4">
+			<label class="control-label"></label>
+		<div class="inner-addon right-addon">
+			<i class="glyphicon glyphicon-search"></i>
+			<input type="text" class="form-control" placeholder="search....">
+		</div>
+	</div><br>
+	<div class=" col-xs-4">
+		</div>
+<div class="clo-xs-4">
+	<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#mymodal" style="">sign up</button>
+</div>&nbsp;&nbsp;&nbsp;
+<div class="modal fade" id="mymodal" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">If you not log in to this page before</h4>
+		</div>
+		<div class="modal-body">
+			<form>
+				<div class="form-group">
+					<label for="email" class="glyphicon glyphicon-envelope">&nbsp;&nbsp;E-mail id:</label>
+					<input type="text" id="email" class="form-control">
+				</div>
+				<div class="form-group">
+				<label for="pwd" class="glyphicon glyphicon-lock">&nbsp;&nbsp;Password:</label>
+				<input type="text" id="pwd" class="form-control" placeholder="must be 8 characters">
+			</div>
+		</form>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+	<div>
+		<h2 style="color:darkblue; text-decoration: underline;"><b><center class="border"><img src="logo.jpg" style="width: 100px;height: 75px;">VM Tuition center</center></b></h2>
+		<marquee behavior="scroll" direction="right" width="100%" height="20">
+		<font color="darkgreen" size="3"><b>You can get 50% Offer at fees in this SUMMER</b></font>
+	</marquee>
+	<nav class="navbar">
+		<ul class="nav navbar-nav" class="pagination">
+			<li class="active" class="glyphicon glyphicon-home"><a href="#">HOME</a></li>
+			<li><a href="images.html">Images</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="history.html">History<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="IN 2017.html">In 2017</a></li>
+				    <li><a href="achievement.html">Achievement</a></li>
+				</ul ></li>
+				<li><a href="facility.html">Facilities</a></li>
+				<li><a href="fees.html">Fee details</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+				</div>
+
+</nav>
+
+
+<div class="row">
+	<div class="col-md-6">
+<div id="mycarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#mycarousel" data-slide-to="1" class="active"></li>
+				<li data-target="#mycarousel" data-slide-to="2" class="active"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="t1.jpg" alt="multifruits" style="width:100%;">
+				</div>
+				<div class="item">
+					<img src="t2.jpg" alt="strawberry" style="width:100%;">
+				</div>
+				<div class="item">
+					<img src="t3.jpg" alt="apple" style="width:100%;">
+				</div>
+			</div>
+			<a class="left carousel-control" href="#mycarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#mycarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+</div>
+<div class="col-md-6" style="color: black;">
+	<b><p>Here we taken tution for all departments of <b>12th stantard</b>.We appoint a seperate staffs for each course.We mostly concentrate on Teaching Maths.It is generally conducted for 8th to 12th standard students.Summer classes are also available for them especially.</p><br>
+	<p>State board and CBSE students are welcome.State board would be Tamil medium or English medium....State board and CBSE students are welcome.State board would be Tamil medium or English medium....State board and CBSE students are welcome. </p>
+	<p>Every child is different and they differ in their learning and grasping ability. Some students learn and understand the concept very quickly, while some may require additional support and attention to help them study effectively and perform well in their exams. But in today’s competitive world, the need to be on the top of the ladder is forever growing.</p>
+    <p>Studies have shown that home tutoring comes out to be a great option for those students who are looking to achieve more marks in exam and keep pace with the upcoming assignments and tests. For this reason, many parents are now hiring private home tutor to assist their children in studies and unlock the door to self confidence and self learning.</p>
+	<p>At school, there is a time limit and a teacher in a class is able to give only limited attention to each student. Due to which, your child may find it difficult to learn the subject or topic very clearly.However, in one-to-one private home tutoring, your child will get more personalized attention from the tutor and he/she will be able to understand the concept more clearly and focus more on the specific subject areas or topics.</p></b><br>
+</div>
+<div class="row">
+	<h4 style="color:darkred;">Registration forms are also available here:&nbsp;&nbsp;&nbsp;
+	<a href="apply.html"><button type="button" class="btn btn-success btn-md"><span class="glyphicon glyphicon-hand-o-right">Apply</span></button></a></h4>
+	<center><h6 class="glyphicon glyphicon-copyright-mark">&nbsp;2018 ALL RIGHTS ARE RESERVED |VM TUITION CENTER|POWERED BY @WEBYKART</h6></center>
+</div>
+</div>
+</div>
+</body>
+</html>
